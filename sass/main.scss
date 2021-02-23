@@ -4,7 +4,7 @@
 @import './base/commons';
 @import './base/container';
 
-// @import './components/section';
+@import './components/section';
 @import './components/btn';
 // @import './components/social-links';
 // @import './components/logo';
@@ -16,8 +16,7 @@
 // @import './components/footer-title';
 
 @import './layout/header';
-// @import './layout/modal-window';
-// @import './layout/hero';
+@import './layout/hero';
 // @import './layout/features';
 // @import './layout/work';
 // @import './layout/team';
