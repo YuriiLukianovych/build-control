@@ -1,0 +1,56 @@
+.footer {
+   background-color: var(--bgc-main);
+   padding: 60px 0;
+   & .logo {
+      color: #ffffff;
+      margin-bottom: 20px;
+   }
+}
+
+.adress-list-item:not(:last-child) {
+   margin-bottom: 5px;
+   @media screen and (min-width: 1200px) {
+      margin-bottom: 6px;
+   }
+}
+.post-adress,
+.footer-mail,
+.footer-phone {
+   display: block;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 1.714;
+   letter-spacing: 0.03em;
+   &:hover,
+   &:focus {
+      color: var(--accent-color);
+   }
+}
+.post-adress {
+   color: #ffffff;
+}
+.footer-mail,
+.footer-phone {
+   color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-wrapper {
+   @media screen and (max-width: 1199px) {
+      text-align: center;
+   }
+
+   @media screen and (min-width: 768px) {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+   }
+   @media screen and (min-width: 1200px) {
+      flex-wrap: nowrap;
+   }
+}
+
+.followus {
+   @media screen and (max-width: 767px) {
+      margin-top: 60px;
+   }
+}

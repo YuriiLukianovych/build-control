@@ -1,0 +1,63 @@
+.clients {
+   .title {
+      margin-bottom: 30px;
+      @media screen and (min-width: 1200px) {
+         margin-bottom: 50px;
+      }
+   }
+}
+.clients-list {
+   @media screen and (min-width: 320px) {
+      display: flex;
+      flex-wrap: wrap;
+      margin-left: calc(-1 * var(--card-gap));
+      margin-top: calc(-1 * var(--card-gap));
+   }
+
+   @media screen and (min-width: 768px) {
+   }
+}
+.clients-list-item {
+   height: 90px;
+
+   @media screen and (max-width: 319px) {
+      &:not(:last-child) {
+         margin-bottom: 30px;
+      }
+   }
+   @media screen and (min-width: 320px) {
+      flex-basis: calc(100% / 2 - var(--card-gap));
+      margin-left: var(--card-gap);
+      margin-top: var(--card-gap);
+   }
+   @media screen and (min-width: 768px) {
+      flex-basis: calc(100% / 3 - var(--card-gap));
+   }
+   @media screen and (min-width: 1200px) {
+      flex-basis: calc(100% / 6 - var(--card-gap));
+   }
+}
+.clients-link {
+   width: 100%;
+   height: 100%;
+   color: #afb1b8;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+
+   border: 1px solid #afb1b8;
+   /* border: 1px solid #2196f3; - accent-color hover */
+   border-radius: 4px;
+   &:hover,
+   &:focus {
+      border-color: var(--accent-color);
+   }
+}
+
+.clients-icons {
+   fill: currentColor;
+   .clients-link:hover &,
+   .clients-link:focus & {
+      fill: var(--accent-color);
+   }
+}
