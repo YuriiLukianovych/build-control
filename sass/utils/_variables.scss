@@ -1,19 +1,14 @@
-/* Шрифты:
-font-family: 'Raleway', sans-serif;
-font-family: 'Roboto', sans-serif; */
-
 :root {
-   --main-font: 'Roboto', sans-serif;
+   --main-font: font-family: 'Inter', sans-serif;
 
-   /* для лого: */
-   --secondary-font: 'Raleway', sans-serif;
+   --main-text-color: #212B31;
+   --secondary-text-color: #72787D;
+   // --accent-color: #2196f3;
+   // --title-color: #212121;
+   // --text-color: #757575;
 
-   --accent-color: #2196f3;
-   --title-color: #212121;
-   --text-color: #757575;
+   // --bgc-main: #2f303a;
+   // --bgc-secondary: #f5f4fa;
 
-   --bgc-main: #2f303a;
-   --bgc-secondary: #f5f4fa;
-
-   --card-gap: 30px;
+   // --card-gap: 30px;
 }
