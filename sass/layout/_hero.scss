@@ -111,22 +111,19 @@
 
 // ------------------------------------------------------------------------------------
 .hero {
-   // height: 869px;
-   height: calc(100vh - 96px);
+   height: 869px;
+   // height: calc(100vh - 96px);
 
    background-image: url(../../images/hero/bg-main.png),
       url(../../images/hero/bg-cars.png);
    background-repeat: no-repeat, no-repeat;
    background-position: center bottom 141px, center bottom 47px;
    &__title {
-      // margin-top: 3px;
       max-width: 820px;
       margin: 3px auto 30px auto;
 
       font-size: 48px;
       line-height: 1.33;
-
-      // margin-bottom: 30px;
    }
 }
 .buttons-group {

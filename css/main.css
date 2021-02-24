@@ -176,7 +176,7 @@ img {
 }
 
 .hero {
-  height: calc(100vh - 96px);
+  height: 869px;
   background-image: url(../../images/hero/bg-main.png), url(../../images/hero/bg-cars.png);
   background-repeat: no-repeat, no-repeat;
   background-position: center bottom 141px, center bottom 47px;
@@ -248,5 +248,39 @@ img {
   color: #ffffff;
   box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.16);
   transform: scale(1.05);
+}
+
+.features__wrap-icon {
+  height: 48px;
+  width: 48px;
+  margin: 0 auto 20px auto;
+}
+
+.features__icon {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.features__list {
+  display: flex;
+}
+
+.features__item {
+  flex-basis: 33.3%;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.features__title {
+  font-size: 18px;
+  line-height: 1.33;
+  margin-bottom: 10px;
+}
+
+.features__description {
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--secondary-text-color);
 }
 /*# sourceMappingURL=main.css.map */
