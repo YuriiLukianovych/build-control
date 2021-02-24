@@ -114,8 +114,8 @@
    height: 869px;
    // height: calc(100vh - 96px);
 
-   background-image: url(../../images/hero/bg-main.png),
-      url(../../images/hero/bg-cars.png);
+   background-image: url(../images/hero/bg-main.png),
+      url(../images/hero/bg-cars.png);
    background-repeat: no-repeat, no-repeat;
    background-position: center bottom 141px, center bottom 47px;
    &__title {
