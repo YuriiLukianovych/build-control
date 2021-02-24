@@ -179,7 +179,7 @@ img {
   height: 869px;
   background-image: url(../images/hero/bg-main.png), url(../images/hero/bg-cars.png);
   background-repeat: no-repeat, no-repeat;
-  background-position: center bottom 141px, center bottom 47px;
+  background-position: center bottom 171px, center bottom 77px;
 }
 
 .hero__title {
