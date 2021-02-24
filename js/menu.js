@@ -1,16 +1,32 @@
+// Скрипт для открытия и закрытия бургер меню
+
 (() => {
-    const menuBtnRef = document.querySelector("[data-menu-button]");
+  const menuBtnOpen = document.querySelector("[data-menu-button-open]");
+  const menuBtnClose = document.querySelector("[data-menu-button-close]");
+  const itemClose = document.querySelectorAll("[close-menu]");
   const mobileMenuRef = document.querySelector("[data-menu]");
-  const bodyh2 = document.querySelector("[data-body]");
-  
-    menuBtnRef.addEventListener("click", () => {
-      const expanded =
-        menuBtnRef.getAttribute("aria-expanded") === "true" || false;
-  
-      menuBtnRef.classList.toggle("is-open");
-      menuBtnRef.setAttribute("aria-expanded", !expanded);
-  
-      mobileMenuRef.classList.toggle("is-open");
-      bodyh2.classList.toggle('is-blocked');
+  const bodyLock = document.querySelector("[body-lock]");
+
+  // MOBILE and TABLET Menu Open
+  menuBtnOpen.addEventListener("click", () => {
+
+    mobileMenuRef.classList.add("is-open");
+    bodyLock.classList.add("is-blocked");
+  });
+  // MOBILE and TABLET Menu Close
+  menuBtnClose.addEventListener("click", () => {
+
+    mobileMenuRef.classList.remove("is-open");
+    bodyLock.classList.remove("is-blocked");
+  });
+  // close on click menu item
+  for (i = 0; i < 20; i++) {
+    itemClose[i].addEventListener("click", () => {
+ 
+      mobileMenuRef.classList.remove("is-open");
+      tabletMenuRef.classList.remove("is-open");
+      bodyLock.classList.remove("is-blocked");
     });
-  })();
+  }
+
+})();
